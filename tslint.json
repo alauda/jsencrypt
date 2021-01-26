@@ -1,6 +1,7 @@
 {
   "extends": "tslint:recommended",
   "rules": {
+    "callable-types": false,
     "no-consecutive-blank-lines": [
       true,
       2

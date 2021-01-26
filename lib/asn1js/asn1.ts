@@ -127,7 +127,7 @@ export class Stream {
 
     public parseTime(start:number, end:number, shortYear:boolean) {
         let s = this.parseStringISO(start, end);
-        const m:Array<number|string> = (shortYear ? reTimeS : reTimeL).exec(s);
+        const m:(number|string)[] = (shortYear ? reTimeS : reTimeL).exec(s);
         if (!m) {
             return "Unrecognized time: " + s;
         }
